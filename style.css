@@ -9,6 +9,7 @@ body {
 }
 
 .title {
+    font-size: 35px;
     padding-bottom: 50px;
     font-family: "lexend", "sans-serif";
 }
@@ -16,6 +17,7 @@ body {
 nav {
     width: 100%;
     margin-right: 70px;
+    margin-top: 2px;
 }
 
 nav ul {
@@ -31,18 +33,24 @@ nav a {
     margin-right: 40px;
     margin-left: 0;
     font-weight: 200;
+    font-size: 25px;
+}
 
+nav select {
+    font-size: 20px;
 }
 
 .first-description {
-    font-size: 10px;
+    font-size: 17px;
     color: firebrick;
     padding-bottom: 20px;
+    padding-left: 15px;
 }
 
 .descrition {
-    font-size: xx-large;
+    font-size: 35px;
     font-weight: bold;
+    padding-top: 10px;
     padding-bottom: 10px;
 
 }
@@ -53,9 +61,9 @@ nav a {
 }
 
 .second-description {
-    margin-top: 190px;
-    ;
-    font-size: 6px;
+    margin-top: 200px;
+    font-size: 14px;
+    padding-top: 58px;
     padding-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -124,7 +132,7 @@ header.hero {
 .img-man-women {
     position: absolute;
     right: 50px;
-    bottom: 0;    
+    bottom: 310px;    
     width: 350px;
     
 }
@@ -147,20 +155,19 @@ header.hero {
     font-size: 13px;
     color: white;
     transition: .3s;
-    transition-delay: .2s;
-    cursor: pointer;
+    transform: scale(1.02);
 }
 
 #find-more {
-    width: 120px;
+    width: 160px;
     height: 40px;
     background-color: orange;
     color: white;
     border: 0;
     border-radius: 7px;
-    font-size: 12px;
-    margin-top: 263px;
-    margin-left: -342px;
+    font-size: 14px;
+    margin-top: 363px;
+    margin-left: -662px;
 }
 
 #find-more a {
@@ -171,13 +178,13 @@ header.hero {
 .play-btn {
     height: 37px;
     margin-left: 259px;
-    margin-top: -88px;
+    margin-top: -60px;
 }
 
 .play-video-subject {
-    margin-left: -142px;
-    margin-top: -77px;
-    font-size: 10px;
+    margin-left: -377px;
+    margin-top: -55px;
+    font-size: 16px;
     color: rgb(76, 75, 75);
 }
 
@@ -194,15 +201,13 @@ main h2 {
 
 .category {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .Services-all-card {
     display: flex;
-    /* put all boxes in one line */
     justify-content: space-between;
-    /* add space between them */
     align-items: center;
-    /* align them vertically */
     gap: 10px;
 }
 
@@ -214,9 +219,7 @@ main h2 {
 
 .Services-card img {
     width: 100%;
-    /* make the image fill its box */
     height: auto;
-    /* keep the natural height */
     display: block;
 }
 
@@ -272,7 +275,7 @@ main h2 {
 
 .destination p {
     position: relative;
-    top: 40px;
+    top: 60px;
 }
 
 .destination h2 {
@@ -314,30 +317,30 @@ main h2 {
     border: 2px solid rgb(14, 5, 5);
     border-right: -20px solid white;
     border-radius: 0px 0px 12px 0px;
-    position: absolute;
-    left: 70%;
-    bottom: -190%;
 }
 
 .London img {
     width: 140px;
     height: 190px;
-    position: absolute;
-    bottom: -173%;
-    left: 70%;
 
 }
 
 .London-destination {
     z-index: -1;
+    position: absolute;
+    top: 180%;
+    left: 82%;
+}
+
+.Roma-destination {
+    position: absolute;
+    left: 72.74%;
+    top: 188%;
 }
 
 .Roma-destination img {
     width: 140px;
     height: 190px;
-    position: absolute;
-    bottom: -177%;
-    left: 79%;
 }
 
 .Rhome-destination {
@@ -348,9 +351,6 @@ main h2 {
     border: 2px solid rgb(14, 5, 5);
     border-right: -20px solid white;
     border-radius: 0px 0px 12px 0px;
-    position: absolute;
-    left: 79%;
-    bottom: -194%;
 }
 
 /*footer*/
@@ -404,7 +404,7 @@ footer {
 .foot-more {
     display: inline-block;
     position: absolute;
-    left: 636px;
+    left: 646px;
 }
 
 .foot-more h5 {
@@ -442,7 +442,7 @@ footer li:hover {
 }
 
 .social-media img {
-    width: 30px;
+    width: 40px;
     margin-right: 19px;
 }
 
@@ -461,95 +461,79 @@ footer li:hover {
 }
 
 .stores img {
-    width: 40px;
-    margin-right: 28px;
+    margin-top: 10px;
+    width: 50px;
+    margin-right: 30px;
 }
 /*about*/
 .who-we{
     text-align: center;
-    font-size: small;
+    font-size: medium;
     font-weight: 500;
     color: rgb(62, 61, 61) ;
 }
 
+.about-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+}
 
 .about-card-1{
-    display: inline-flex;
-    justify-content: center;
+    width: calc(100% / 3 - 20px);
     background-color: white;
-    width: 300px;
     text-align: center;
     height: 250px;
-    margin-right: 6px;
+    border: 3px solid black;
 }
+
 
 .about-card-2{
-    display: inline-flex;
-    justify-content: center;
+    width: calc(100% / 3 - 20px);
     background-color: white;
-    width: 300px;
     text-align: center;
     height: 250px;
+    border: 3px solid black;
 
 }
-.about-card-3{
-    display: inline-flex;
-    justify-content: center;
+.about-card-3{    
+    width: calc(100% / 3 - 20px);
     background-color: white;
-    width: 290px;
     text-align: center;
     height: 250px;
-    margin-left: 5px;
-    position: relative;
-    
-
+    border: 3px solid black;
 }
 .people{
     position: relative;
-    top: 140px;
-    right: 160px;
+    top: 84px;
+    right: 152px;
     font-size: small;
     font-weight: 100;
     margin-right: 15px;
     color: rgb(78, 66, 66);
 }
 
-.country-1{
-    position: absolute;
-    top: 1070px;
-    right: 800px;
+.country{
+    padding: 103px 0px 0px 23px;
     font-size: small;
     font-weight: 100;
-    margin-right: 15px;
-    color: rgb(78, 66, 66);
-}
-.country-2{
-    position: absolute;
-    top: 1070px;
-    right: 510px;
-    font-size: small;
-    font-weight: 100;
-    margin-right: 15px;
-    color: rgb(78, 66, 66);
-}
-.country-3{
-    position: absolute;
-    top: 170px;
-    right: 140px;
-    font-size: small;
-    font-weight: 100;
-    margin-right: 15px;
+    margin-right: 335px;
+    width: 123px;
     color: rgb(78, 66, 66);
 }
 
 .card-paragh{
+    width: 90%;
+    padding-right: 10px;
     text-align: center;
     position: relative;
     left: 30px;
     top: 6px;
 }
 
-#for-more {
+.for-more {
     position: relative;
     top: 50px;
     left: 48%;
@@ -558,13 +542,13 @@ footer li:hover {
     border-radius: 6px;
 }
 
-#for-more:hover {
+.for-more:hover {
     background-color: orange;
     transition: .3s;
     transform: scale(1.08);
 }
 
-#for-more a {
+.for-more a {
     text-decoration: none;
     color: black;  
 }
@@ -603,56 +587,42 @@ footer li:hover {
     padding: 10px;
 }
 
-
-/* .top-destination{
+#Subscribe {
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-
+    flex-direction: column;
+    justify-content: center;    
+    border: 3px solid black;
+    height: 200px;
+    width: 390px;
+    margin-left: 567px;
+    background-color: rgba(248, 161, 248, 0.381);
+    border-radius: 17px 0px 0px 0px;
+}
+#Subscribe p {
+    padding-bottom: 20px;
+    text-align: center;
+}
+.gmail {
+    margin-bottom: 30px;
+    height: 26px;
+    width: 80%;
+    margin-left: 40px;
+    text-align: center; 
+    border: 2px solid black;
 
 }
+#Subscribe-btn{
+    width: 80px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 6px;
 
-.destination-card-1 img {
-    height: 65%;
-    width: 30% !important;
+    
 }
-
-.destination-card-1 p {
-    height: 60px;
-    padding-left: 6px;
-    background-color: white;
-    width: 30%;
-    padding-top: 10px;
-    margin-bottom: -21px;
-}
-
-.destination-card-1 img {
-    width: 100%;
-    height: 246px;
-    border-radius: 9px 9px 0px 0px; 
-}
-
-.destination-card-1 p {
-    height: 46.3px;
-    padding-left: 6px;
-    background-color: white;
-    width: 100%;
-    padding-top: -0px;
-    margin-bottom: -21px;
-    margin-top: -2.5px;
-    border-radius: 0px 0px 9px 9px; 
-}
-.destination-card-1 {
-    /* position: relative;
-    right: 270px; */
-    /* border: 1px solid;
-    height: 321px;
-    border-radius: 9px;
-}
-.destination-card-1:hover{
+#Subscribe-btn:hover{
     transition: .3s;
     transform: scale(1.04);
-} */
-
- 
-
+    background-color: orange;
+    color: white;
+}
