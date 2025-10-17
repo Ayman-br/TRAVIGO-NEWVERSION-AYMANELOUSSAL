@@ -118,7 +118,7 @@ textarea {
 
 
 header.hero {
-    background-image: url(./img/decore.png);
+    background-image: url(/img/decore.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 64%;
